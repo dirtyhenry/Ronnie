@@ -38,6 +38,7 @@
 /* Begin PBXFileReference section */
 		00720D0E253A3700005E355F /* TopLevelCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLevelCoordinator.swift; sourceTree = "<group>"; };
 		00720D19253A42D7005E355F /* RonnieLogHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RonnieLogHandler.swift; sourceTree = "<group>"; };
+		00C7BB832537A0E90064E320 /* Ronnie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ronnie.entitlements; sourceTree = "<group>"; };
 		00E4CA8325379FEF00C9AA34 /* Ronnie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ronnie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E4CA8625379FEF00C9AA34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00E4CA8825379FEF00C9AA34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +102,7 @@
 		00E4CA8525379FEF00C9AA34 /* Ronnie */ = {
 			isa = PBXGroup;
 			children = (
+				00C7BB832537A0E90064E320 /* Ronnie.entitlements */,
 				00E4CA8625379FEF00C9AA34 /* AppDelegate.swift */,
 				00E4CA8825379FEF00C9AA34 /* SceneDelegate.swift */,
 				00E4CA8F25379FF100C9AA34 /* Assets.xcassets */,
@@ -436,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Ronnie/Ronnie.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N77R86QZUG;
 				INFOPLIST_FILE = Ronnie/Info.plist;
@@ -455,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Ronnie/Ronnie.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N77R86QZUG;
 				INFOPLIST_FILE = Ronnie/Info.plist;
