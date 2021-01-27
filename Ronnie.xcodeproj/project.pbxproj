@@ -3,14 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00720D0A253A35C2005E355F /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 00720D09253A35C2005E355F /* Logging */; };
+		00720D0F253A3700005E355F /* TopLevelCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00720D0E253A3700005E355F /* TopLevelCoordinator.swift */; };
+		00720D1A253A42D7005E355F /* RonnieLogHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00720D19253A42D7005E355F /* RonnieLogHandler.swift */; };
 		00E4CA8725379FEF00C9AA34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E4CA8625379FEF00C9AA34 /* AppDelegate.swift */; };
 		00E4CA8925379FEF00C9AA34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E4CA8825379FEF00C9AA34 /* SceneDelegate.swift */; };
-		00E4CA8B25379FEF00C9AA34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E4CA8A25379FEF00C9AA34 /* ViewController.swift */; };
-		00E4CA8E25379FEF00C9AA34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E4CA8C25379FEF00C9AA34 /* Main.storyboard */; };
 		00E4CA9025379FF100C9AA34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E4CA8F25379FF100C9AA34 /* Assets.xcassets */; };
 		00E4CA9325379FF100C9AA34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E4CA9125379FF100C9AA34 /* LaunchScreen.storyboard */; };
 		00E4CA9E25379FF200C9AA34 /* RonnieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E4CA9D25379FF200C9AA34 /* RonnieTests.swift */; };
@@ -35,11 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00720D0E253A3700005E355F /* TopLevelCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLevelCoordinator.swift; sourceTree = "<group>"; };
+		00720D19253A42D7005E355F /* RonnieLogHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RonnieLogHandler.swift; sourceTree = "<group>"; };
 		00E4CA8325379FEF00C9AA34 /* Ronnie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ronnie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E4CA8625379FEF00C9AA34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00E4CA8825379FEF00C9AA34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		00E4CA8A25379FEF00C9AA34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		00E4CA8D25379FEF00C9AA34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00E4CA8F25379FF100C9AA34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00E4CA9225379FF100C9AA34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00E4CA9425379FF100C9AA34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00720D0A253A35C2005E355F /* Logging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,11 +103,11 @@
 			children = (
 				00E4CA8625379FEF00C9AA34 /* AppDelegate.swift */,
 				00E4CA8825379FEF00C9AA34 /* SceneDelegate.swift */,
-				00E4CA8A25379FEF00C9AA34 /* ViewController.swift */,
-				00E4CA8C25379FEF00C9AA34 /* Main.storyboard */,
 				00E4CA8F25379FF100C9AA34 /* Assets.xcassets */,
 				00E4CA9125379FF100C9AA34 /* LaunchScreen.storyboard */,
 				00E4CA9425379FF100C9AA34 /* Info.plist */,
+				00720D0E253A3700005E355F /* TopLevelCoordinator.swift */,
+				00720D19253A42D7005E355F /* RonnieLogHandler.swift */,
 			);
 			path = Ronnie;
 			sourceTree = "<group>";
@@ -144,6 +146,9 @@
 			dependencies = (
 			);
 			name = Ronnie;
+			packageProductDependencies = (
+				00720D09253A35C2005E355F /* Logging */,
+			);
 			productName = Ronnie;
 			productReference = 00E4CA8325379FEF00C9AA34 /* Ronnie.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 00E4CA7A25379FEF00C9AA34;
+			packageReferences = (
+				00720D08253A35C2005E355F /* XCRemoteSwiftPackageReference "swift-log" */,
+			);
 			productRefGroup = 00E4CA8425379FEF00C9AA34 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +241,6 @@
 			files = (
 				00E4CA9325379FF100C9AA34 /* LaunchScreen.storyboard in Resources */,
 				00E4CA9025379FF100C9AA34 /* Assets.xcassets in Resources */,
-				00E4CA8E25379FEF00C9AA34 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E4CA8B25379FEF00C9AA34 /* ViewController.swift in Sources */,
 				00E4CA8725379FEF00C9AA34 /* AppDelegate.swift in Sources */,
+				00720D0F253A3700005E355F /* TopLevelCoordinator.swift in Sources */,
 				00E4CA8925379FEF00C9AA34 /* SceneDelegate.swift in Sources */,
+				00720D1A253A42D7005E355F /* RonnieLogHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +304,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		00E4CA8C25379FEF00C9AA34 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				00E4CA8D25379FEF00C9AA34 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		00E4CA9125379FF100C9AA34 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -443,7 +443,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.mickf.Ronnie;
+				PRODUCT_BUNDLE_IDENTIFIER = net.mickf.ronnie.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -462,7 +462,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.mickf.Ronnie;
+				PRODUCT_BUNDLE_IDENTIFIER = net.mickf.ronnie.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -593,6 +593,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		00720D08253A35C2005E355F /* XCRemoteSwiftPackageReference "swift-log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-log.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		00720D09253A35C2005E355F /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00720D08253A35C2005E355F /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 00E4CA7B25379FEF00C9AA34 /* Project object */;
 }
